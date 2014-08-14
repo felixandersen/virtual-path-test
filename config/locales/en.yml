@@ -1,2 +1,6 @@
 en:
-  hello: "Hello world"
+  root:
+    show:
+      title: "Virtual Paths Test"
+      description: |
+        Testing strange translation context behaviour in partial layout rendering.
