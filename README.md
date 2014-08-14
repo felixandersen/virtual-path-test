@@ -53,4 +53,4 @@ I've been looking into [the partial rendering process](https://github.com/rails/
 
 The disparity between expected and actual translations is due to [TranslationHelper](https://github.com/rails/rails/blob/91608dc342237372548ccbe403ef06c56c2755f2/actionview/lib/action_view/helpers/translation_helper.rb)'s implementation of [scope_key_by_partial](https://github.com/rails/rails/blob/91608dc342237372548ccbe403ef06c56c2755f2/actionview/lib/action_view/helpers/translation_helper.rb#L81-L91) which uses the `@virtual_path` of the renderer which, when rendering a partial layout, resolves to the layout while inside the block. Maybe the concepts need to be separated? Or maybe the current behaviour is desirable in some way?
 
-I don't know. Let's figure it out!
+I don't know, but I've lodged [an issue](https://github.com/rails/rails/issues/16499). Let's figure it out!
