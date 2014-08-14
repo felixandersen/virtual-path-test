@@ -1,2 +1,10 @@
 <h1><%= t(".title") %></h1>
 <%= simple_format t(".description") %>
+
+<%= render "common/box" %>
+
+<%= simple_format t(".message") %>
+
+<%= render layout: "common/box" do %>
+  <%= simple_format t(".message") %>
+<% end %>

@@ -4,3 +4,11 @@ en:
       title: "Virtual Paths Test"
       description: |
         Testing strange translation context behaviour in partial layout rendering.
+      message: |
+        Message we expect inside the box.
+  common:
+    box:
+      prequel: |
+        Box with a silly description.
+      message: |
+        Message we actually see inside the box.
